@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="chat_box">
+        <div class="logo">
+          <img src="/email.png" alt="logo" />
+          <h1>ChatMe</h1>
+        </div>
+
+        <div class="msg_area"></div>
+        <div class="msg">
+          <textarea
+            class="text_area"
+            id="msg"
+            cols="30"
+            rows="1"
+            placeholder="Write the message..."
+          ></textarea>
+          
+        </div>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
